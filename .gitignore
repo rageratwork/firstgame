@@ -58,6 +58,7 @@ freeline_project_description.json
 *.swp
 *.*~
 MP3/
+ogg/
 Store Listing.txt
 seo.txt
 screenshots/
