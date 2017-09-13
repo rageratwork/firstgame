@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/chalkboard" />
+
+	<View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp" 
+        android:layout_centerHorizontal="true"/>
+        
+    <TextView
+        android:id="@+id/title"
+        style="@style/MenuFont"
+        android:gravity="center"
+        android:text="@string/menu_title"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/baby"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:onClick="doSmash"
+        android:text="@string/menu_baby" />
+
+    <TextView
+        android:id="@+id/findit"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/baby"
+        android:layout_below="@+id/baby"
+        android:layout_marginTop="15dp"
+        android:onClick="doFindit"
+        android:text="@string/menu_findit" />
+
+    <TextView
+        android:id="@+id/popit"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/findit"
+        android:layout_below="@+id/findit"
+        android:layout_marginTop="17dp"
+        android:onClick="doSlash"
+        android:text="@string/menu_popit" />
+
+    <TextView
+        android:id="@+id/help"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/popit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="doHelp"
+        android:text="@string/menu_help" />
+
+    <TextView
+        android:id="@+id/settings"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/baby"
+        android:layout_alignBottom="@+id/baby"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:onClick="doSettings"
+        android:text="@string/menu_settings" />
+
+    <TextView
+        android:id="@+id/volume"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/findit"
+        android:layout_alignBottom="@+id/findit"
+        android:layout_alignRight="@+id/settings"
+        android:text="@string/menu_volume" />
+
+    <SeekBar
+        android:id="@+id/volumebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/volume"
+        android:layout_alignTop="@+id/popit"
+        android:layout_toRightOf="@+id/strut" />
+
+    <TextView
+        android:id="@+id/inside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/volumebar"
+        android:layout_below="@+id/volumebar"
+        android:text="@string/inside_voice" />
+
+    <TextView
+        android:id="@+id/outside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/volumebar"
+        android:layout_below="@+id/volumebar"
+        android:text="@string/outside_voice" />
+
+    <TextView
+        android:id="@+id/exit"
+        style="@style/MenuFont"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/volumebar"
+        android:layout_marginBottom="30dp"
+        android:onClick="doExit"
+        android:text="@string/menu_exit" />
+
+</RelativeLayout>

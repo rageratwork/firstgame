@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<ListPreference
+        android:key="pref_difficulty"
+        android:title="@string/pref_difficulty"
+        android:summary="@string/pref_difficulty_summary"
+        android:entries="@array/pref_difficulty"
+        android:entryValues="@array/pref_difficulty_values" />
+    
+    <PreferenceCategory
+        android:key="pref_shapes_settings"
+        android:title="@string/pref_shapes_title" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_shapes_basic"
+            android:summary="@string/pref_shapes_basic_summary"
+            android:title="@string/pref_shapes_basic" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_shapes_intermediate"
+            android:summary="@string/pref_shapes_intermediate_summary"
+            android:title="@string/pref_shapes_intermediate" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_shapes_advanced"
+            android:summary="@string/pref_shapes_advanced_summary"
+            android:title="@string/pref_shapes_advanced" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_numbers_settings"
+        android:title="@string/pref_numbers_title" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_numbers_basic"
+            android:summary="@string/pref_numbers_basic_summary"
+            android:title="@string/pref_numbers_basic" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_numbers_intermediate"
+            android:summary="@string/pref_numbers_intermediate_summary"
+            android:title="@string/pref_numbers_intermediate" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_letters_settings"
+        android:title="@string/pref_letters_title" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_letters_basic"
+            android:summary="@string/pref_letters_basic_summary"
+            android:title="@string/pref_letters_basic" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_letters_intermediate"
+            android:summary="@string/pref_letters_intermediate_summary"
+            android:title="@string/pref_letters_intermediate" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_letters_advanced"
+            android:summary="@string/pref_letters_advanced_summary"
+            android:title="@string/pref_letters_advanced" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_voice_settings"
+        android:title="@string/pref_voice_title" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_voice_shapes"
+            android:summary="@string/pref_voice_shapes_summary"
+            android:title="@string/pref_voice_shapes" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_voice_numbers"
+            android:summary="@string/pref_voice_numbers_summary"
+            android:title="@string/pref_voice_numbers" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_voice_letters"
+            android:summary="@string/pref_voice_letters_summary"
+            android:title="@string/pref_voice_letters" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_voice_colors"
+            android:summary="@string/pref_voice_colors_summary"
+            android:title="@string/pref_voice_colors" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_voice_laughter"
+            android:summary="@string/pref_voice_laughter_summary"
+            android:title="@string/pref_voice_laughter" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

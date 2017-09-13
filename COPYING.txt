@@ -1,0 +1,13 @@
+Copyright (c) 2013 David J. Rager
+
+Baby's First Game source code and related application files are available under
+an MIT style license. (See LICENSE)
+
+The sound and graphic assets are available under the Creative Commons
+Attribution 4.0 International (CC BY 4.0) license.
+https://creativecommons.org/licenses/by/4.0/
+
+The Eraser Dust font is Shareware belonging to David Rakowski. Distribution of
+which is permitted per the terms discussed on his web site.
+http://home.earthlink.net/~ziodavino/album1_009.htm
+
